@@ -1,5 +1,6 @@
 print("")
-print("")
+print("=== somas sem sentido ===")
+print("igual sua vida")
 print("")
 
 # var/input
@@ -10,4 +11,4 @@ for i in range(0, 3):
     total = num1+num2
     i+=1
     print(total)
-print(total*3)
+print(total*i)
