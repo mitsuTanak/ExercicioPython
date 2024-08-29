@@ -1,16 +1,16 @@
-# Importando ABC (Abstractb Base Classes) para criar classe
+# Importando o módulo ABC (Abstract Base Classes) para criar classes abstratas
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
     def __init__(self, nome):
-        # Atributo privado (Encapsulado)
-        self._nome = nome
+        # Atributo privado (Encapsulamento)
+        self.__nome = nome
 
-# Metodo getter para o atributo o atributo privado (Encapsulamento)
+    # Método getter para acessar o atributo privado (Encapsulamento)
     def get_nome(self):
-        return self._nome
+        return self.__nome
 
-# Metodo abstrato(Abstraçã)
+    # Método abstrato (Abstração)
     @abstractmethod
     def fazer_som(self):
         pass
