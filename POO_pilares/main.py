@@ -14,11 +14,16 @@ def main():
     # Demonstrando o funcionamento 
     print(" ")
     print(f"Nome do cachorro: {rex.get_nome()}")
-    print(f"Raça do Cachorro: {rex.raca()}")
+    print(f"Raça do Cachorro: {rex.raca}")
     print(" ")
     print(f"Nome do gato: {mimi.get_nome()}")
-    print(f"Cor do gato: {mimi.cor()}")
+    print(f"Cor do gato: {mimi.cor}")
     print(" ")
+
+    # Demonstrando polimorfismo
+    emitir_som(rex)
+    emitir_som(mimi)
+
 
 # Demonstrando polimorfismo
 if __name__ == "__main__":
